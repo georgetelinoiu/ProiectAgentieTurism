@@ -23,6 +23,7 @@ namespace ProiectAgentieTurism
             if (activeForm != null)
             {
                 activeForm.Close();
+            }
                 activeForm = childForm;
                 childForm.TopLevel = false;
                 childForm.FormBorderStyle = FormBorderStyle.None;
@@ -32,7 +33,7 @@ namespace ProiectAgentieTurism
                 childForm.BringToFront();
                 childForm.Show();
                 lbTitlu.Text = childForm.Text;
-            }
+            
         }
 
         private void btnTur_Click(object sender, EventArgs e)

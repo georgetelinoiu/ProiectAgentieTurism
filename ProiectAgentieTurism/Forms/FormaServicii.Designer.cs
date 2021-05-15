@@ -58,11 +58,11 @@ namespace ProiectAgentieTurism.Forms
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(279, 31);
+            this.label5.Location = new System.Drawing.Point(487, 25);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 17);
+            this.label5.Size = new System.Drawing.Size(85, 17);
             this.label5.TabIndex = 24;
-            this.label5.Text = "label5";
+            this.label5.Text = "Lista servicii";
             // 
             // label4
             // 
@@ -123,6 +123,8 @@ namespace ProiectAgentieTurism.Forms
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(282, 63);
             this.dataGridView1.Name = "dataGridView1";
@@ -133,8 +135,9 @@ namespace ProiectAgentieTurism.Forms
             // 
             // button3
             // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(282, 370);
+            this.button3.Location = new System.Drawing.Point(39, 370);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(133, 50);
             this.button3.TabIndex = 15;
@@ -143,8 +146,9 @@ namespace ProiectAgentieTurism.Forms
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(455, 370);
+            this.button2.Location = new System.Drawing.Point(282, 370);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(133, 50);
             this.button2.TabIndex = 14;
@@ -153,6 +157,7 @@ namespace ProiectAgentieTurism.Forms
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(631, 370);
             this.button1.Name = "button1";

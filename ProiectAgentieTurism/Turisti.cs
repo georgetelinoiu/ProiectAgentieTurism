@@ -6,23 +6,28 @@ using System.Threading.Tasks;
 
 namespace ProiectAgentieTurism
 {
-    class Turisti
+    [Serializable]
+    public class Turisti
     {
         string nume;
         string prenume;
         string cnp;
-
+        bool tichete;
 
         public Turisti()
         {
-
+            nume = "";
+            prenume = "";
+            cnp = "";
+            tichete = false;
         }
 
-        public Turisti(string nume, string prenume, string cnp)
+        public Turisti(string nume, string prenume, string cnp, bool tichete)
         {
             this.nume = nume;
             this.prenume = prenume;
             this.cnp = cnp;
+            this.tichete = tichete;
         }
 
         public string Nume
@@ -41,6 +46,12 @@ namespace ProiectAgentieTurism
         {
             get { return cnp; }
             set { cnp = value; }
+        }
+
+        public bool Tichete
+        {
+            get { return tichete; }
+            set { tichete = value; }
         }
 
     }

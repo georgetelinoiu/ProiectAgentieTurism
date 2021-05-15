@@ -134,7 +134,7 @@ namespace ProiectAgentieTurism.Forms
             // button3
             // 
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(282, 370);
+            this.button3.Location = new System.Drawing.Point(40, 370);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(133, 50);
             this.button3.TabIndex = 15;
@@ -144,7 +144,7 @@ namespace ProiectAgentieTurism.Forms
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(455, 370);
+            this.button2.Location = new System.Drawing.Point(282, 370);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(133, 50);
             this.button2.TabIndex = 14;
