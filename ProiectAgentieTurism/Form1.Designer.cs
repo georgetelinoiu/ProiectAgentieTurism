@@ -29,18 +29,19 @@ namespace ProiectAgentieTurism
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbTitlu = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnTur = new System.Windows.Forms.Button();
             this.panelForm = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btnTranz = new System.Windows.Forms.Button();
+            this.btnServ = new System.Windows.Forms.Button();
+            this.btnTur = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -52,8 +53,8 @@ namespace ProiectAgentieTurism
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(110)))), ((int)(((byte)(160)))));
             this.panelMenu.Controls.Add(this.button3);
-            this.panelMenu.Controls.Add(this.button2);
-            this.panelMenu.Controls.Add(this.button1);
+            this.panelMenu.Controls.Add(this.btnTranz);
+            this.panelMenu.Controls.Add(this.btnServ);
             this.panelMenu.Controls.Add(this.btnTur);
             this.panelMenu.Controls.Add(this.panel1);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -104,70 +105,6 @@ namespace ProiectAgentieTurism
             this.lbTitlu.TabIndex = 0;
             this.lbTitlu.Text = "Bine ai venit!";
             // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = global::ProiectAgentieTurism.Properties.Resources.floppy_disk;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 410);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(201, 82);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Salveaza";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::ProiectAgentieTurism.Properties.Resources.coin_stack__1_;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 264);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(201, 82);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Tranzactii";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::ProiectAgentieTurism.Properties.Resources.travel;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 182);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(201, 82);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Servicii";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // btnTur
-            // 
-            this.btnTur.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTur.FlatAppearance.BorderSize = 0;
-            this.btnTur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTur.Image = global::ProiectAgentieTurism.Properties.Resources.human__2_;
-            this.btnTur.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTur.Location = new System.Drawing.Point(0, 100);
-            this.btnTur.Name = "btnTur";
-            this.btnTur.Size = new System.Drawing.Size(201, 82);
-            this.btnTur.TabIndex = 2;
-            this.btnTur.Text = "Turisti";
-            this.btnTur.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTur.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTur.UseVisualStyleBackColor = true;
-            // 
             // panelForm
             // 
             this.panelForm.Controls.Add(this.label3);
@@ -197,6 +134,73 @@ namespace ProiectAgentieTurism
             this.pictureBox1.Size = new System.Drawing.Size(484, 243);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Image = global::ProiectAgentieTurism.Properties.Resources.floppy_disk;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(0, 410);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(201, 82);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Salveaza";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // btnTranz
+            // 
+            this.btnTranz.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTranz.FlatAppearance.BorderSize = 0;
+            this.btnTranz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTranz.Image = global::ProiectAgentieTurism.Properties.Resources.coin_stack__1_;
+            this.btnTranz.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTranz.Location = new System.Drawing.Point(0, 264);
+            this.btnTranz.Name = "btnTranz";
+            this.btnTranz.Size = new System.Drawing.Size(201, 82);
+            this.btnTranz.TabIndex = 4;
+            this.btnTranz.Text = "Tranzactii";
+            this.btnTranz.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTranz.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTranz.UseVisualStyleBackColor = true;
+            this.btnTranz.Click += new System.EventHandler(this.btnTranz_Click);
+            // 
+            // btnServ
+            // 
+            this.btnServ.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnServ.FlatAppearance.BorderSize = 0;
+            this.btnServ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnServ.Image = global::ProiectAgentieTurism.Properties.Resources.travel;
+            this.btnServ.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnServ.Location = new System.Drawing.Point(0, 182);
+            this.btnServ.Name = "btnServ";
+            this.btnServ.Size = new System.Drawing.Size(201, 82);
+            this.btnServ.TabIndex = 3;
+            this.btnServ.Text = "Servicii";
+            this.btnServ.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnServ.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnServ.UseVisualStyleBackColor = true;
+            this.btnServ.Click += new System.EventHandler(this.btnServ_Click);
+            // 
+            // btnTur
+            // 
+            this.btnTur.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTur.FlatAppearance.BorderSize = 0;
+            this.btnTur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTur.Image = ((System.Drawing.Image)(resources.GetObject("btnTur.Image")));
+            this.btnTur.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTur.Location = new System.Drawing.Point(0, 100);
+            this.btnTur.Name = "btnTur";
+            this.btnTur.Size = new System.Drawing.Size(201, 82);
+            this.btnTur.TabIndex = 2;
+            this.btnTur.Text = "Turisti";
+            this.btnTur.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTur.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTur.UseVisualStyleBackColor = true;
+            this.btnTur.Click += new System.EventHandler(this.btnTur_Click);
             // 
             // Form1
             // 
@@ -229,8 +233,8 @@ namespace ProiectAgentieTurism
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnTur;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnTranz;
+        private System.Windows.Forms.Button btnServ;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label lbTitlu;
         private System.Windows.Forms.Panel panelForm;

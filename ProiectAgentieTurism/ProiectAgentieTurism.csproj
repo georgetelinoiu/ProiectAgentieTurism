@@ -52,6 +52,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormaServicii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormaServicii.Designer.cs">
+      <DependentUpon>FormaServicii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormaTranzactii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormaTranzactii.Designer.cs">
+      <DependentUpon>FormaTranzactii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormaTuristi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormaTuristi.Designer.cs">
+      <DependentUpon>FormaTuristi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -64,6 +82,15 @@
     <Compile Include="Turisti.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormaServicii.resx">
+      <DependentUpon>FormaServicii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormaTranzactii.resx">
+      <DependentUpon>FormaTranzactii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormaTuristi.resx">
+      <DependentUpon>FormaTuristi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,25 +111,23 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="human.png" />
+    <None Include="Resurse\human %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="human %281%29.png" />
+    <None Include="Resurse\human %282%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="human %282%29.png" />
+    <None Include="Resurse\travel.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="travel.png" />
+    <None Include="Resurse\coin-stack %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="coin-stack %281%29.png" />
+    <None Include="Resurse\floppy-disk.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="floppy-disk.png" />
+    <None Include="Resurse\travel-agent.png" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="travel-agent.png" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

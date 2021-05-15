@@ -34,5 +34,20 @@ namespace ProiectAgentieTurism
                 lbTitlu.Text = childForm.Text;
             }
         }
+
+        private void btnTur_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormaTuristi(),sender);
+        }
+
+        private void btnServ_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormaServicii(), sender);
+        }
+
+        private void btnTranz_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormaTranzactii(), sender);
+        }
     }
 }
